@@ -1,0 +1,129 @@
+$midnight: #2c3e50;
+$clouds: #ecf0f1;
+// General
+
+
+// h1 {
+//   margin: 0;
+//   line-height: 2;
+//   text-align: center;
+// }
+// h2 {
+//   margin: 0 0 .5em;
+//   font-weight: normal;
+// }
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+// Layout
+// .row {
+//   display:flex;
+//   .col {
+//     flex:1;
+//     &:last-child {
+//       margin-left: 1em;
+//     }
+//   }
+// }
+/* Accordion styles */
+.tabs {
+  // border-radius: 23px;
+  overflow: hidden;
+  // background-color: #F5F5FF;
+  
+}
+.tab {
+  width: 100%;
+  color: #402B2B;
+  overflow: hidden;
+  // margin: 1.25rem 0;
+  // box-shadow:  0px 20px 0px 0px #F5F5FF;
+  padding: 1rem 1rem;
+  
+
+  &-label {
+    background: #FFFFFF;
+    box-shadow:  3px 5px 5px 5px #eeeef3;
+    overflow: hidden;
+    border-radius: 23px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    /* Icon */
+    &::after {
+      content: "\276F";
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      transition: all .35s;
+      
+    }
+  }
+  &-content {
+    position: relative;
+    top: 5px;
+    max-height: 0;
+    padding: 0 1rem;
+    color: $midnight;
+    background: #F5F5FF;
+    transition: all .1s;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    box-shadow: 5px 5px 10px rgba(191, 191, 236, 0.72);
+    border-radius: 10px;
+    // transform: translateY(25px);
+    
+  }
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: $midnight;
+    cursor: pointer;
+    &:hover {
+      background: darken($midnight, 10%);
+    }
+  }
+}
+
+// :checked
+input:checked {
+  + .tab-label {
+    
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+  ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+    top: -10px;
+    z-index: -999;
+    
+  }
+}
+
+.tabs--2 {
+  position: relative;
+  top: 50rem;
+
+  @include respond(phone) {
+    top: -16.5rem;
+  }
+}
+
+[class^="col-tab"] {
+  width: 100% !important;
+}
+
+
+
+

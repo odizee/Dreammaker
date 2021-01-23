@@ -1,0 +1,125 @@
+.heading-primary {
+    color: #696A86;
+    font-size: 4.2rem;
+    line-height: 5.6rem;
+    // height: 11.2rem;
+    // width: 54.8rem;
+    border-radius: nullpx;
+
+    backface-visibility: hidden;
+    flex-direction: column;
+
+    @include respond(phone) {
+        line-height: 4.6rem;
+        margin-top: 10rem;
+    }
+
+}
+
+body {
+    font-family: "Signika", "Montserrat", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: #434a54;
+    overflow-x: hidden;
+}
+
+.content-p {
+    font-family: "Montserrat";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.7rem;
+    letter-spacing: 0em;
+    
+    color: #696A86;
+
+    &--primary{
+        text-align: left;
+        margin: 3rem 0;
+    }
+
+    @include respond(phone) {
+        text-align: center;
+    }
+}
+
+.heading-secondary{
+    left: 63.9rem;
+    top: 83.2rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.6rem;
+    line-height: 3.9rem;
+    color: #626780;
+    // display: inline-block;
+    margin: 0 auto;
+}
+
+.content-p {
+    &--sec {
+        width: 50%;
+        margin: auto;
+    }
+
+    &--rating {
+        width: 66rem;
+    }
+}
+
+    
+
+.heading-tertiatry {
+    font-size: 2.2rem;
+    // font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+    /* identical to box height, or 182% */
+
+
+    /* Blcak green */
+
+    color: #626780;
+}
+
+.pt-serif {
+    width: 55rem;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4.8rem;
+    color: #402B2B;
+
+    @include respond(tab-port) {
+        // text-align: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    &--one {
+        margin: 10.8rem 0 1rem 0;
+        padding: 10rem 0;
+    }
+
+    &--two {
+        // padding: 0 0 10rem 1.5rem;
+        
+        @include respond(tab-land) {
+            font-size: 5rem;
+            width: 43rem;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        @include respond(small-phone) {
+            font-size: 3rem;
+
+        }
+    }
+}

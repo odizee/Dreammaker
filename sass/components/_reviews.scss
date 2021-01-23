@@ -1,0 +1,109 @@
+.rating-review__text{
+    @include respond(phone) {
+        width: 100%;
+    }
+}
+
+.rating {
+    @include respond(phone) {
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem;
+    }
+
+    
+}
+
+.sitting {
+
+    @include respond(phone) {
+        display: none;
+    }
+}
+
+.review {
+    background-color: #fff;
+    box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+    padding: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    color: #9D9D9D;
+    // width: 48.8rem;
+    height: 37.5rem;
+    border-radius: 10px;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+        
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        width: 35rem;
+        // padding-right: 4rem;
+        justify-content: space-between;
+
+        @include respond(small-phone) {
+            width: 25rem;
+        }
+    }
+
+    &__user {
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        align-items: center;
+
+        @include respond(small-phone) {
+            width: 80%;
+            margin-top: 3rem;
+        }
+    }
+
+    &__photo {
+        height: 12.5rem;
+        width: 12.5rem;
+        border-radius: 50rem;
+
+        @include respond(small-phone) {
+            height: 6.5rem;
+            width: 5.5rem;
+        }
+    }
+
+    &__user-box {
+        
+    }
+
+    &__user-name {
+        
+    }
+
+    &__user-date {
+        
+    }
+
+    &__rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        
+    }
+
+    &__arrow {
+        @include respond(small-phone) {
+            height: 5.5rem;
+            width: 5.5rem;
+        }
+    }
+
+
+}

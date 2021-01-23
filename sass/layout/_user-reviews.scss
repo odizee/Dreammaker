@@ -1,0 +1,8 @@
+.user-reviews {
+    display: flex;
+    justify-content: center;
+
+    @include respond(small-phone) {
+        margin-top: 3rem
+    }
+}

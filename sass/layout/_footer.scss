@@ -1,0 +1,101 @@
+footer {
+    height: 30rem;
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fff;
+    padding: 25rem 0;
+
+    @include respond(phone) {
+        height: 150vh;        
+        
+    }
+    
+}
+
+.row__footer {
+
+    @include respond(phone) {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+}
+
+.footer {
+
+    &__ul li{
+        margin-bottom: 1.2rem;
+    }
+
+    &__headings {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    &__copy {
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        justify-content: flex-end;
+
+        @include respond(phone) {
+            justify-content: center;
+        }
+
+    }
+
+    &__social-icons {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 18%;
+
+        @include respond(phone) {
+            justify-content: center;
+        }
+    }
+
+    @include respond(phone) {
+        &__step-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+}
+
+.footer__headings + ul{
+    list-style-type: none;
+    font-family: Poppins;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E6E6E6;
+
+}
+
+
+li a {
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 10rem;
+}
+
+

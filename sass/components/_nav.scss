@@ -1,0 +1,142 @@
+
+  
+  .navbar {
+    font-size: 18px;
+    background-color: #c4c4c413;
+    padding: 2rem 0;
+    position: absolute;
+    width: 100%;
+
+
+  }
+  
+  .main-nav {
+    list-style-type: none;
+    display: none;
+
+  }
+  
+  .nav-links,
+  .logo {
+    text-decoration: none;
+    // color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+
+
+  }
+  
+  .logo {
+    display: flex;
+    margin-left: 20px;
+
+    & img {
+      // width: 20%;
+      // height: 20%;
+    }
+    
+  }
+  
+  .navbar-toggle {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+  }
+  
+  .active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #c4c4c4e7;
+    padding: 5rem 0;
+  }
+
+  .btn-nav {
+    display: flex;
+    align-self: center;
+  }
+
+  @media screen and (max-width: 360px) {
+
+    .logo {
+      
+      & img {
+        // width: 60%;
+        // height: 60%;
+      }
+    }
+  }
+
+
+  @media screen and (min-width: 768px) {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10rem !important;
+      height: 9rem;
+      align-items: center;
+
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 2.7rem;
+
+    }
+  
+    .main-nav {
+      display: flex;
+      margin-right: -3rem;
+      flex-direction: row;
+      justify-content: flex-end;   
+      align-items: center; 
+    }
+  
+    .main-nav li {
+      margin: 0 2rem 0 0;
+
+    }
+    
+    .nav-links {
+      margin-left: 1rem;
+      color: #717784;
+    }
+  
+    .logo {
+      margin-top: 0;
+    }
+  
+    .navbar-toggle {
+      display: none;
+    }
+  
+    .logo:hover,
+    .nav-links:hover {
+      color: #717784;
+    }
+  }
+
+  .logo {
+    display: flex;
+    margin-left: 20px;
+
+    & img {
+      // width: 30%;
+      // height: 20%;
+    }
+    
+  }
+
+  .btn-nav {
+    width: 23.4rem;
+    height: 6rem;
+    text-align: center;
+  }
+
+

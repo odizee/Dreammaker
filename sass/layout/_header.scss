@@ -1,0 +1,43 @@
+.header {
+    height: 95vh;
+    background-image: url(../images/header.png);
+    background-size: cover;
+    background-position: top;
+
+    &__content-box {
+        flex-direction: column;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        display: block;
+        align-items: flex-start;
+        padding: 35rem 30rem 0 0!important;
+        ;
+        @include respond(phone) {
+            padding: 10rem 3rem!important;
+            // align-items: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        @include respond(small-phone) {
+            padding: 8rem 3rem!important;
+            align-items: center;
+            text-align: center;
+            
+        }
+
+        
+    }
+
+    @include respond(tab-land) {
+        height: 70vh;            
+    }
+
+    &__ul {
+        display: flex;
+    }
+
+    &__nav-menu {
+        margin: 2rem;
+    }
+}
